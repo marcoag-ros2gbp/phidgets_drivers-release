@@ -1,0 +1,12 @@
+Source: ros-rolling-phidgets-high-speed-encoder
+Section: misc
+Priority: optional
+Maintainer: Martin Günther <martin.guenther@dfki.de>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake-ros, ros-rolling-phidgets-api, ros-rolling-phidgets-msgs, ros-rolling-rclcpp, ros-rolling-rclcpp-components, ros-rolling-sensor-msgs, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-phidgets-high-speed-encoder
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-launch, ros-rolling-phidgets-api, ros-rolling-phidgets-msgs, ros-rolling-rclcpp, ros-rolling-rclcpp-components, ros-rolling-sensor-msgs, ros-rolling-ros-workspace
+Description: Driver for the Phidgets high speed encoder devices

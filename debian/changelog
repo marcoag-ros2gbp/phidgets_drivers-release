@@ -1,0 +1,187 @@
+ros-rolling-phidgets-high-speed-encoder (2.3.2-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 27 Nov 2023 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (2.3.1-2noble) noble; urgency=high
+
+  * BUGFIX: Z-channel index was not observed in reported positions (#158 <https://github.com/ros-drivers/phidgets_drivers/issues/158>)
+    * fix doxygen format and ensure initial values
+    * BUGFIX: Encoder index was not used
+  * BUGFIX: Wrong speed conversion factor (#157 <https://github.com/ros-drivers/phidgets_drivers/issues/157>)
+    The current code assumed time intervals from the Phisgets API was microseconds, but it's actually milliseconds. Reported speeds are all wrong by a factor of 1e3.
+  * Contributors: Jose Luis Blanco-Claraco, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 03 Mar 2023 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (2.3.0-2noble) noble; urgency=high
+
+  * Merge pull request #132 <https://github.com/ros-drivers/phidgets_drivers/issues/132> from mintar/feat-pre-commit-ros2
+    [galactic] Add pre-commit, move from travis to GitHub actions, fix style
+  * Fix clang-format
+  * BUGFIX: duplicated values for all encoders (#126 <https://github.com/ros-drivers/phidgets_drivers/issues/126>)
+  * Contributors: Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 13 Apr 2022 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (2.2.2-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 17 Feb 2022 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (2.2.1-2noble) noble; urgency=high
+
+  * Update the ROS 2 readme files. (#93 <https://github.com/ros-drivers/phidgets_drivers/issues/93>)
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 03 Aug 2021 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (2.2.0-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 20 May 2021 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (2.1.0-2noble) noble; urgency=high
+
+  * Get rid of deprecation warnings in Foxy. (#75 <https://github.com/ros-drivers/phidgets_drivers/issues/75>)
+  * Switch header guards to _HPP SUFFIX.
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 29 Mar 2021 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (2.0.2-2noble) noble; urgency=high
+
+  * Release build fixes (#67 <https://github.com/ros-drivers/phidgets_drivers/issues/67>)
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 01 Jun 2020 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (2.0.1-2noble) noble; urgency=high
+
+  * Switch the buildtoo_depend to ament_cmake_ros. (#65 <https://github.com/ros-drivers/phidgets_drivers/issues/65>)
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 05 Dec 2019 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (2.0.0-2noble) noble; urgency=high
+
+  * Switch from NULL to nullptr.
+  * Update READMEs to use "Published Topics" and "Subscribed Topics". (#59 <https://github.com/ros-drivers/phidgets_drivers/issues/59>)
+  * Change launch output to "both" so it logs as well.
+  * Make publish_rate a double.
+  * Print out the serial number when connecting.
+  * Port high speed encoder to ROS 2.
+  * Ignore all packages for ROS 2 port.
+  * Update maintainers in package.xml
+  * Merge pull request #39 <https://github.com/ros-drivers/phidgets_drivers/issues/39> from clalancette/add-libphidget22
+  * Add launch files for all drivers.
+  * Add in try/catch blocks for connecting.
+  * Fixes from review.
+  * Documentation updates to README.md
+  * Set the publish_rate to 0 by default.
+  * Add in the license files and add to the headers.
+  * Remove nodes in favor of nodelets.
+  * Fix a small typo.
+  * Rewrite High Speed Encoder to use libphidget22.
+  * Rename Phidget class to Phidget21 class.
+  * Switch to C++14.
+  * Remove unused std_msgs dependency from Phidgets High Speed Encoder.
+  * Merge pull request #36 <https://github.com/ros-drivers/phidgets_drivers/issues/36> from clalancette/phidget-cleanup2
+  * Run clang-format on the whole codebase.
+  * Switch to C++14 everywhere.
+  * Split custom messages into their own package.
+  * Rewrite the high speed encoder node.
+  * Change API from separate open/waitForAttachment to openAndWaitForAttachment.
+  * Small cleanups throughout the code.
+  * Style cleanup.
+  * Switch to package format 2.
+  * Cleanup spacing in all of the CMakeLists.txt
+  * Contributors: Chris Lalancette, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 05 Dec 2019 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.7.9-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 28 Jun 2019 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.7.8-2noble) noble; urgency=high
+
+  * phidgets_high_speed_encoder: fix missing tick2rad values (#30 <https://github.com/ros-drivers/phidgets_drivers/issues/30>)
+  * Contributors: Charles Brian Quinn
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 06 May 2019 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.7.7-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 18 Sep 2018 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.7.6-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 09 Aug 2018 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.7.5-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 31 Jan 2018 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.7.4-2noble) noble; urgency=high
+
+  * Merge pull request #15 <https://github.com/ros-drivers/phidgets_drivers/issues/15> from jlblancoc/kinetic
+    Add Phidgets high-speed encoder package
+  * Contributors: Jose Luis Blanco-Claraco, Geoff Viola, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 04 Oct 2017 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.7.3-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 30 Jun 2017 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.7.2-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 02 Jun 2017 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.7.1-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 22 May 2017 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.7.0-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 17 Feb 2017 17:40:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.2.3-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 17 Feb 2017 12:11:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.2.2-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 23 Mar 2015 00:00:00 -0000
+
+ros-rolling-phidgets-high-speed-encoder (0.2.1-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 15 Jan 2015 00:00:00 -0000
+
+
