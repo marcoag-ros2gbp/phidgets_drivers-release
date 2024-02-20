@@ -1,0 +1,255 @@
+ros-rolling-phidgets-spatial (2.3.2-2noble) noble; urgency=high
+
+  * Only set magnetometer gain if param is set (#169 <https://github.com/ros-drivers/phidgets_drivers/issues/169>)
+  * added new parameters for spatial precision MOT0109 onwards
+  * added support for phidget spatial onboard orientation estimation
+  * Contributors: Malte kl. Piening, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 27 Nov 2023 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (2.3.1-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 03 Mar 2023 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (2.3.0-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 13 Apr 2022 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (2.2.2-2noble) noble; urgency=high
+
+  * Fix behavior after USB reattachment (#119 <https://github.com/ros-drivers/phidgets_drivers/issues/119>)
+    The Phidged Spatial never recovered after detaching and reattaching to
+    the USB port. This commit fixes that.
+  * Add attach + detach handlers
+  * Fix publishing of invalid mag readings (#116 <https://github.com/ros-drivers/phidgets_drivers/issues/116>)
+  * Contributors: Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 17 Feb 2022 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (2.2.1-2noble) noble; urgency=high
+
+  * Make the magnetometer corrections optional again. (#95 <https://github.com/ros-drivers/phidgets_drivers/issues/95>)
+  * Update the ROS 2 readme files. (#93 <https://github.com/ros-drivers/phidgets_drivers/issues/93>)
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 03 Aug 2021 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (2.2.0-2noble) noble; urgency=high
+
+  * Make sure to declare the type while declaring the parameter. (#89 <https://github.com/ros-drivers/phidgets_drivers/issues/89>)
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 20 May 2021 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (2.1.0-2noble) noble; urgency=high
+
+  * Don't publish messages that jumped back in time. (#86 <https://github.com/ros-drivers/phidgets_drivers/issues/86>)
+  * Log synchronization window details at DEBUG level (#84 <https://github.com/ros-drivers/phidgets_drivers/issues/84>)
+  * Get rid of deprecation warnings in Foxy. (#75 <https://github.com/ros-drivers/phidgets_drivers/issues/75>)
+  * Switch header guards to _HPP SUFFIX.
+  * Contributors: Chris Lalancette, Martin Günther, Michael Grupp
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 29 Mar 2021 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (2.0.2-2noble) noble; urgency=high
+
+  * Release build fixes (#67 <https://github.com/ros-drivers/phidgets_drivers/issues/67>)
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 01 Jun 2020 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (2.0.1-2noble) noble; urgency=high
+
+  * Switch the buildtoo_depend to ament_cmake_ros. (#65 <https://github.com/ros-drivers/phidgets_drivers/issues/65>)
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 05 Dec 2019 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (2.0.0-2noble) noble; urgency=high
+
+  * Include file cleanup.
+  * Make sure exceptions get caught by reference.
+  * Switch from NULL to nullptr.
+  * Make sure to initialize class member variables.
+  * Update READMEs to use "Published Topics" and "Subscribed Topics". (#59 <https://github.com/ros-drivers/phidgets_drivers/issues/59>)
+  * Change launch output to "both" so it logs as well.
+  * Make publish_rate a double.
+  * Print out the serial number when connecting.
+  * Update documentation to mention device dependent fields.
+  * Update FIXME comments for sleep.
+  * Port spatial to ROS 2.
+  * Ignore all packages for ROS 2 port.
+  * Fix wrong defaults for standard deviations (#48 <https://github.com/ros-drivers/phidgets_drivers/issues/48>)
+  * Improve the IMU calibration service (#47 <https://github.com/ros-drivers/phidgets_drivers/issues/47>)
+  * Update maintainers in package.xml
+  * Merge pull request #39 <https://github.com/ros-drivers/phidgets_drivers/issues/39> from clalancette/add-libphidget22
+  * Resynchronize the times at periodic intervals.
+  * Add launch files for all drivers.
+  * Add in try/catch blocks for connecting.
+  * Fixes from review.
+  * Documentation updates to README.md
+  * Set the publish_rate to 0 by default.
+  * Add in the license files and add to the headers.
+  * Remove nodes in favor of nodelets.
+  * Finish removing launch file from phidgets_spatial.
+  * Rewrite IMU using libphidget22.
+  * Contributors: Chris Lalancette, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 05 Dec 2019 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.7.9-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 28 Jun 2019 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.7.8-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 06 May 2019 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.7.7-2noble) noble; urgency=high
+
+  * Add parameter use_imu_time (default true) (#27 <https://github.com/ros-drivers/phidgets_drivers/issues/27>)
+    Setting use_imu_time to false will disable the imu time calibration and
+    always use the Host time, i.e. ros::Time::now().
+  * Contributors: Jochen Sprickerhof
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 18 Sep 2018 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.7.6-2noble) noble; urgency=high
+
+  * phidgets_imu: Ensure strictly ordered timestamps (#26 <https://github.com/ros-drivers/phidgets_drivers/issues/26>)
+    Fixes #17 <https://github.com/ros-drivers/phidgets_drivers/issues/17>.
+  * Contributors: Michael Grupp, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 09 Aug 2018 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.7.5-2noble) noble; urgency=high
+
+  * phidgets_imu: Add roslaunch_add_file_check
+  * phidgets_imu: Add diagnostic_aggregator dependency
+  * phidgets_imu: Add missing install rule for config
+  * update to use non deprecated pluginlib macro (#19 <https://github.com/ros-drivers/phidgets_drivers/issues/19>)
+  * Contributors: Martin Günther, Mikael Arguedas
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 31 Jan 2018 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.7.4-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 04 Oct 2017 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.7.3-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 30 Jun 2017 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.7.2-2noble) noble; urgency=high
+
+  * First release into Lunar
+  * phidgets_imu: Add use_magnetic_field_msg to launch
+    This is required in Jade: Since Jade, phidgets_imu publishes
+    MagneticField messages, but imu_filter_madgwick still subscribes by
+    default to Vector3Stamped messages. When running as nodelets, this can
+    produce a silent error.
+    In Kinetic, this is optional: imu_filter_madgwick now defaults to
+    MagneticField.
+    From Lunar on, it should be removed, because the use_magnetic_field_msg
+    param was removed from imu_filter_madgwick.
+  * Contributors: Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 02 Jun 2017 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.7.1-2noble) noble; urgency=high
+
+  * phidgets_imu: add optional serial number parameter (#7 <https://github.com/ros-drivers/phidgets_drivers/issues/7>)
+  * phidgets_imu: Add imu_filter_madgwick dependency
+    Closes #9 <https://github.com/ros-drivers/phidgets_drivers/issues/9>.
+  * Contributors: Johan M. von Behren, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 22 May 2017 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.7.0-2noble) noble; urgency=high
+
+  * Publish MagneticField instead of Vector3Stamped
+  * Report mag data in Tesla, not Gauss
+    This is to conform with sensor_msgs/MagneticField, which requires the
+    data to be in Tesla.
+  * Contributors: Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 17 Feb 2017 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.2.3-2noble) noble; urgency=high
+
+  * Add IMU diagnostics (#24 <https://github.com/ccny-ros-pkg/phidgets_drivers/pull/24>)
+  * Set data rate after reattachment
+    This fixes a bug where after disconnecting and reconnecting the USB
+    cable, the data rate would be set to the default of 125 Hz (= period of
+    8ms). By moving the setDataRate call to the attachHandler, the data rate
+    is correctly set after each reattachment.
+  * Contributors: Mani Monajjemi, Keshav Iyengar, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 17 Feb 2017 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.2.2-2noble) noble; urgency=high
+
+  * Merge pull request #18 from ccny-ros-pkg/libphidgets
+    Merge libphidgets branch into indigo
+  * set orientation_covariance[0] to -1
+    from Imu.msg:
+    > If you have no estimate for one of the data elements (e.g. your IMU doesn't produce an orientation
+    > estimate), please set element 0 of the associated covariance matrix to -1.
+  * phidgets_imu: fixed issue #9
+  * Contributors: Martin Günther, Murilo FM
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 23 Mar 2015 00:00:00 -0000
+
+ros-rolling-phidgets-spatial (0.2.1-2noble) noble; urgency=high
+
+  * add boost depends to CMakeLists
+    All non-catkin things that we expose in our headers should be added to
+    the DEPENDS, so that packages which depend on our package will also
+    automatically link against it.
+    Also see: http://answers.ros.org/question/58498/what-is-the-purpose-of-catkin_depends/#58593
+  * improve error output when setting compass corr params
+    The previous implementation didn't catch a number of error codes
+    (EPHIDGET_INVALIDARG, EPHIDGET_NOTATTACHED, EPHIDGET_UNEXPECTED), and
+    the new one is more elegant and consistent with the previous code anyway.
+  * Set compass correction params on the device
+    Tested with a Phidget Spatial 3/3/3 1044.
+  * phidgets_imu: install phidgets_imu_nodelet.xml
+  * phidgets_imu: not exporting nodelet as library anymore
+  * Updated version, maintainer and author information
+  * phidgets_imu: added install rule to launch files
+  * phidgets_imu: removed unnecessary dependency
+  * Deleted comments within files of all packages
+  * Catkinised packages
+  * Merge pull request #1 from uos/fix_imu_time_lag
+    fix IMU time lag
+  * add some hints to error message
+    I just spent 30 minutes trying to figure out why the IMU works on one
+    computer and doesn't on another one. Felt a little foolish when I found
+    out that the udev rules weren't installed; maybe providing some more
+    info in the error message helps others.
+  * use ros::Time::now() if time lag exceeds threshold
+  * added warning if IMU time lags behind ROS time
+  * renamed rate parameter to period
+  * added timestamp in imu data
+  * fixed cmakelists by including lib to compile on electric
+  * adding missing imu_ros h file
+  * adding missing imu_ros cpp file
+  * added api, imu and ir
+  * initial commit
+  * Contributors: Ivan Dryanovski, Martin Günther, Murilo FM
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 15 Jan 2015 00:00:00 -0000
+
+
