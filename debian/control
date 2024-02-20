@@ -1,0 +1,12 @@
+Source: ros-rolling-libphidget22
+Section: misc
+Priority: optional
+Maintainer: Martin Günther <martin.guenther@dfki.de>
+Build-Depends: debhelper (>= 9.0.0), libusb-1.0-0-dev, ros-rolling-ament-cmake, ros-rolling-ros-workspace
+Homepage: http://ros.org/wiki/libphidget22
+Standards-Version: 3.9.2
+
+Package: ros-rolling-libphidget22
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libusb-1.0-0, ros-rolling-ros-workspace
+Description: This package wraps the libphidget22 to use it as a ROS dependency

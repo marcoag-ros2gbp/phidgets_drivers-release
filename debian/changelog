@@ -1,0 +1,159 @@
+ros-rolling-libphidget22 (2.3.2-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 27 Nov 2023 00:00:00 -0000
+
+ros-rolling-libphidget22 (2.3.1-2noble) noble; urgency=high
+
+  * Update to libphidget22 1.13. (#160 <https://github.com/ros-drivers/phidgets_drivers/issues/160>)
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 03 Mar 2023 00:00:00 -0000
+
+ros-rolling-libphidget22 (2.3.0-2noble) noble; urgency=high
+
+  * Update to libphidgets 20220203 (#138 <https://github.com/ros-drivers/phidgets_drivers/issues/138>)
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 13 Apr 2022 00:00:00 -0000
+
+ros-rolling-libphidget22 (2.2.2-2noble) noble; urgency=high
+
+  * Remove outdated patch file (#112 <https://github.com/ros-drivers/phidgets_drivers/issues/112>)
+  * Update to libphidget22-1.7.20210816 (#108 <https://github.com/ros-drivers/phidgets_drivers/issues/108>)
+    This is required to support new devices such as the MOT0109.
+    Fixes #99 <https://github.com/ros-drivers/phidgets_drivers/issues/99>, fixes #105 <https://github.com/ros-drivers/phidgets_drivers/issues/105>.
+    This is a forward-port of #106 <https://github.com/ros-drivers/phidgets_drivers/issues/106> to ROS2.
+  * Make sure libphidget22 library can be found. (#97 <https://github.com/ros-drivers/phidgets_drivers/issues/97>) (#100 <https://github.com/ros-drivers/phidgets_drivers/issues/100>)
+    In Foxy and later, we need to provide the .dsv hook so that
+    the library can be found.
+  * Contributors: Chris Lalancette, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 17 Feb 2022 00:00:00 -0000
+
+ros-rolling-libphidget22 (2.2.1-2noble) noble; urgency=high
+
+  * Update to the latest libphidgets 1.6 library. (#91 <https://github.com/ros-drivers/phidgets_drivers/issues/91>)
+  * Contributors: Chris Lalancette
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 03 Aug 2021 00:00:00 -0000
+
+ros-rolling-libphidget22 (2.2.0-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 20 May 2021 00:00:00 -0000
+
+ros-rolling-libphidget22 (2.1.0-2noble) noble; urgency=high
+
+  * Compile libphidget22 with -fPIC (#88 <https://github.com/ros-drivers/phidgets_drivers/issues/88>)
+  * Update to libphidget22 from 2020.
+  * Contributors: Chris Lalancette, Scott K Logan
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 29 Mar 2021 00:00:00 -0000
+
+ros-rolling-libphidget22 (2.0.2-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 01 Jun 2020 00:00:00 -0000
+
+ros-rolling-libphidget22 (2.0.1-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 05 Dec 2019 00:00:00 -0000
+
+ros-rolling-libphidget22 (2.0.0-2noble) noble; urgency=high
+
+  * Port libphidget22 vendor package to ament.
+  * Ignore all packages for ROS 2 port.
+  * Update maintainers in package.xml
+  * Merge pull request #39 <https://github.com/ros-drivers/phidgets_drivers/issues/39> from clalancette/add-libphidget22
+  * Patch warnings in libphidget22.
+  * Fix up libphidget22 package.xml dependencies.
+  * Add in libphidget22 package.
+  * Contributors: Chris Lalancette, Martin Günther
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 05 Dec 2019 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.7.9-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 28 Jun 2019 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.7.8-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 06 May 2019 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.7.7-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Tue, 18 Sep 2018 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.7.6-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 09 Aug 2018 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.7.5-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 31 Jan 2018 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.7.4-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Wed, 04 Oct 2017 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.7.3-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 30 Jun 2017 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.7.2-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 02 Jun 2017 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.7.1-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 22 May 2017 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.7.0-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 17 Feb 2017 17:40:00 -0000
+
+ros-rolling-libphidget22 (0.2.3-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Fri, 17 Feb 2017 12:11:00 -0000
+
+ros-rolling-libphidget22 (0.2.2-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Mon, 23 Mar 2015 00:00:00 -0000
+
+ros-rolling-libphidget22 (0.2.1-2noble) noble; urgency=high
+
+
+
+ -- Martin Günther <martin.guenther@dfki.de>  Thu, 15 Jan 2015 00:00:00 -0000
+
+
